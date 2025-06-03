@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "cgroup": "deno run --allow-run cgroup.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "arktype": "npm:arktype@^2.1.20",
+    "yargs": "npm:yargs@^18.0.0"
+  }
+}
