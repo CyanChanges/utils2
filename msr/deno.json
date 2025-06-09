@@ -1,9 +1,10 @@
 {
   "name": "@msr/msr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "tasks": {
-    "test": "deno test --doc --allow-net"
+    "test": "deno test --doc --allow-net",
+    "lint": "deno lint"
   },
   "exports": {
     ".": "./mod.ts",
