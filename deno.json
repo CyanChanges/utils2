@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "cgroup": "deno run --allow-run cgroup.ts"
+    "cgroup": "deno run --allow-run cgroup.ts",
+    "msr": "deno run -A msr.ts"
   },
   "importMap": "./import_map.json",
   "workspace": [
