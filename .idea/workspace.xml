@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="36b4052e-d52b-4e37-80dc-6481f7e5ed9a" name="更改" comment="chore: update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/collapse.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/collapse.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/collapse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/collapse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/mod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/mod.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/msr.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msr/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msr/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/msr/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msr/meta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/msr/meta.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msr/oop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/msr/oop.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msr/raw.ts" beforeDir="false" afterPath="$PROJECT_DIR$/msr/raw.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +89,7 @@
       <workItem from="1748941579429" duration="57000" />
       <workItem from="1748941638487" duration="238000" />
       <workItem from="1748943803138" duration="1185000" />
-      <workItem from="1749441003721" duration="12217000" />
+      <workItem from="1749441003721" duration="12874000" />
     </task>
     <task id="LOCAL-00001" summary="chore: initial">
       <option name="closed" value="true" />
@@ -155,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749451039238</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: update">
+      <option name="closed" value="true" />
+      <created>1749453415740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749453415740</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
