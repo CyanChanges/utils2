@@ -13,6 +13,34 @@ export class AlbumDetail {
     return new AlbumDetail(detail)
   }
 
+  get cid() {
+    return this.data.cid
+  }
+
+  get name() {
+    return this.data.name
+  }
+
+  get intro() {
+    return this.data.intro
+  }
+
+  get belong() {
+    return this.data.belong
+  }
+
+  get coverUrl() {
+    return this.data.coverUrl
+  }
+
+  get coverDeUrl() {
+    return this.data.coverDeUrl
+  }
+
+  get songs() {
+    return this.data.songs
+  }
+
   keys() {
     return this.data.songs.map(x => x.cid)
   }

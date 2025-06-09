@@ -47,7 +47,9 @@ if (import.meta.main) {
   for (const arg of Deno.args) {
     if (!program.length && arg.startsWith("+")) {
       let templ_name = arg.slice(1);
-      if (Reflect.has(TEMPLATE_ALIAS, templ_name)) templ_name = Reflect.get(TEMPLATE_ALIAS, templ_name);
+      if (Reflect.has(TEMPLATE_ALIAS, templ_name)) {
+        templ_name = Reflect.get(TEMPLATE_ALIAS, templ_name);
+      }
       if (!templ_name) throw new TypeError(`Unknown template ${arg.slice(1)}`);
       templates.push(templ_name);
     } else {
