@@ -1,3 +1,4 @@
+// deno-lint-ignore prefer-const
 export let CGROUP_TEMPLATE = {
   "compile-limited": [
     "CPUQuota=1280%",
@@ -9,6 +10,7 @@ export let CGROUP_TEMPLATE = {
   ],
 };
 export type Templates = typeof CGROUP_TEMPLATE;
+// deno-lint-ignore prefer-const
 export let TEMPLATE_ALIAS = {
   cl: "compile-limited",
   ch: "compile-high",

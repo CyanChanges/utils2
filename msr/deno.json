@@ -1,0 +1,15 @@
+{
+  "name": "@msr/msr",
+  "version": "0.1.0",
+  "license": "MIT",
+  "tasks": {
+    "test": "deno test --doc --allow-net"
+  },
+  "exports": {
+    ".": "./mod.ts",
+    "./oop": "./oop.ts",
+    "./api": "./api.ts",
+    "./raw": "./raw.ts",
+    "./meta": "./meta.ts"
+  }
+}

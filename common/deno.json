@@ -1,0 +1,12 @@
+{
+  "name": "@cyans/common",
+  "version": "0.1.0",
+  "license": "MIT",
+  "tasks": {
+    "test": "deno test"
+  },
+  "exports": {
+    ".": "./mod.ts",
+    "./collapse": "./collapse.ts"
+  }
+}
