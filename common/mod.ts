@@ -1,1 +1,1 @@
-export { Collapse } from './collapse.ts'
+export { Collapse } from "./collapse.ts";

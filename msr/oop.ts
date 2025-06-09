@@ -1,4 +1,4 @@
-import * as meta from './meta.ts'
+import * as meta from "./meta.ts";
 import { albumDetailOf, songOf } from "./raw.ts";
 
 /**
@@ -17,10 +17,10 @@ import { albumDetailOf, songOf } from "./raw.ts";
  * ```
  */
 export class Album {
-  data: typeof meta.AlbumDetail.infer
+  data: typeof meta.AlbumDetail.infer;
 
   constructor(data: typeof meta.AlbumDetail.inferIn) {
-    this.data = meta.AlbumDetail.assert(data)
+    this.data = meta.AlbumDetail.assert(data);
   }
 
   /**
@@ -38,8 +38,8 @@ export class Album {
    * ```
    */
   static async fromCid(cid: string): Promise<Album> {
-    const detail = await albumDetailOf(cid)
-    return new Album(detail)
+    const detail = await albumDetailOf(cid);
+    return new Album(detail);
   }
 
   /**
@@ -58,7 +58,7 @@ export class Album {
    * assertEquals(album.name, "Grow on My Time")
    */
   static async fromRawAlbum(album: typeof meta.Album.infer): Promise<Album> {
-    return await Album.fromCid(album.cid)
+    return await Album.fromCid(album.cid);
   }
 
   /**
@@ -73,7 +73,7 @@ export class Album {
    * ```
    */
   get cid(): string {
-    return this.data.cid
+    return this.data.cid;
   }
 
   /**
@@ -88,7 +88,7 @@ export class Album {
    * ```
    */
   get name(): string {
-    return this.data.name
+    return this.data.name;
   }
 
   /**
@@ -103,14 +103,14 @@ export class Album {
    * ```
    */
   get intro(): string {
-    return this.data.intro
+    return this.data.intro;
   }
 
   /**
    * Belonging of the album
    */
   get belong(): string {
-    return this.data.belong
+    return this.data.belong;
   }
 
   /**
@@ -125,7 +125,7 @@ export class Album {
    * ```
    */
   get coverUrl(): string {
-    return this.data.coverUrl
+    return this.data.coverUrl;
   }
 
   /**
@@ -140,7 +140,7 @@ export class Album {
    * ```
    */
   get coverDeUrl(): string {
-    return this.data.coverDeUrl
+    return this.data.coverDeUrl;
   }
 
   /**
@@ -162,28 +162,28 @@ export class Album {
    * ```
    */
   get songs(): (typeof meta.AlbumSong.infer)[] {
-    return this.data.songs
+    return this.data.songs;
   }
 
   /**
    * All Song cid in the album
    */
   keys(): string[] {
-    return this.data.songs.map(x => x.cid)
+    return this.data.songs.map((x) => x.cid);
   }
 
   /**
    * All Song in the album
    */
   values(): (typeof meta.AlbumSong.infer)[] {
-    return this.data.songs.map(x => x)
+    return this.data.songs.map((x) => x);
   }
 
   /**
    * All Song entries in the album (`[cid, AlbumSong]`)
    */
   entries(): [string, typeof meta.AlbumSong.infer][] {
-    return this.data.songs.map(x => [x.cid, x] as const)
+    return this.data.songs.map((x) => [x.cid, x] as const);
   }
 }
 
@@ -202,10 +202,10 @@ export class Album {
  * ```
  */
 export class Song {
-  data: typeof meta.SongDetail.infer
+  data: typeof meta.SongDetail.infer;
 
   constructor(data: typeof meta.SongDetail.inferIn) {
-    this.data = meta.SongDetail.assert(data)
+    this.data = meta.SongDetail.assert(data);
   }
 
   /**
@@ -222,8 +222,10 @@ export class Song {
    * const song = Song.fromAlbumSong(favAlbum.songs[0])
    * assertEquals(song.name, "Grow on My Time")
    */
-  static async fromAlbumSong(albumSong: typeof meta.AlbumSong.infer): Promise<Song> {
-    return await Song.fromCid(albumSong.cid)
+  static async fromAlbumSong(
+    albumSong: typeof meta.AlbumSong.infer,
+  ): Promise<Song> {
+    return await Song.fromCid(albumSong.cid);
   }
 
   /**
@@ -242,7 +244,7 @@ export class Song {
    */
   static async fromCid(cid: string): Promise<Song> {
     const detail = await songOf(cid);
-    return new Song(detail)
+    return new Song(detail);
   }
 
   /**
@@ -257,7 +259,7 @@ export class Song {
    * assertEquals(song.name, "Grow on My Time")
    */
   get name(): string {
-    return this.data.name
+    return this.data.name;
   }
 
   /**
@@ -272,7 +274,7 @@ export class Song {
    * assertEquals(song.cid, "697699")
    */
   get cid(): string {
-    return this.data.cid
+    return this.data.cid;
   }
 
   /**
@@ -288,35 +290,35 @@ export class Song {
    * ```
    */
   get albumCid(): string {
-    return this.data.albumCid
+    return this.data.albumCid;
   }
 
   /**
    * Song source URL
    */
   get sourceUrl(): string {
-    return this.data.sourceUrl
+    return this.data.sourceUrl;
   }
 
   /**
    * Song lyric URL
    */
   get lyricUrl(): string | null {
-    return this.data.lyricUrl
+    return this.data.lyricUrl;
   }
 
   /**
    * Song MV URL
    */
   get mvUrl(): string | null {
-    return this.data.mvUrl
+    return this.data.mvUrl;
   }
 
   /**
    * Song MV cover URL
    */
   get mvCoverUrl(): string | null {
-    return this.data.mvCoverUrl
+    return this.data.mvCoverUrl;
   }
 
   /**
@@ -332,6 +334,6 @@ export class Song {
    * assert(song.artists.includes("塞壬唱片-MSR"))
    */
   get artists(): string[] {
-    return this.data.artists
+    return this.data.artists;
   }
 }
