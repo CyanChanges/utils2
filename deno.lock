@@ -1,15 +1,21 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@deno-library/progress@*": "1.5.1",
+    "jsr:@radashi-org/radashi@*": "12.5.1",
     "jsr:@std/assert@1": "1.0.13",
     "jsr:@std/bytes@^1.0.5": "1.0.5",
     "jsr:@std/crypto@*": "1.0.4",
     "jsr:@std/encoding@*": "1.0.10",
+    "jsr:@std/fmt@*": "1.0.3",
+    "jsr:@std/fmt@1.0.3": "1.0.3",
     "jsr:@std/fs@*": "1.0.17",
     "jsr:@std/internal@^1.0.6": "1.0.6",
+    "jsr:@std/io@0.225.0": "0.225.0",
     "jsr:@std/path@*": "1.0.9",
     "jsr:@std/path@^1.0.9": "1.0.9",
     "jsr:@std/streams@*": "1.0.9",
+    "jsr:@std/text@*": "1.0.14",
     "npm:@sindresorhus/is@0.14.0": "0.14.0",
     "npm:arktype@^2.1.20": "2.1.20",
     "npm:cli-progress@*": "3.12.0",
@@ -17,6 +23,16 @@
     "npm:yargs@18": "18.0.0"
   },
   "jsr": {
+    "@deno-library/progress@1.5.1": {
+      "integrity": "966611826b8bb27baae73ab1c4fa4317cd4edd2abb99750cd6f8488d22d5b121",
+      "dependencies": [
+        "jsr:@std/fmt@1.0.3",
+        "jsr:@std/io"
+      ]
+    },
+    "@radashi-org/radashi@12.5.1": {
+      "integrity": "0778fb8eeb1ebb8ff51445d83dcd17164787d845b4f51eae122b04141ec01048"
+    },
     "@std/assert@1.0.13": {
       "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
       "dependencies": [
@@ -32,6 +48,9 @@
     "@std/encoding@1.0.10": {
       "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
     },
+    "@std/fmt@1.0.3": {
+      "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
+    },
     "@std/fs@1.0.17": {
       "integrity": "1c00c632677c1158988ef7a004cb16137f870aafdb8163b9dce86ec652f3952b",
       "dependencies": [
@@ -41,6 +60,9 @@
     "@std/internal@1.0.6": {
       "integrity": "9533b128f230f73bd209408bb07a4b12f8d4255ab2a4d22a1fd6d87304aca9a4"
     },
+    "@std/io@0.225.0": {
+      "integrity": "c1db7c5e5a231629b32d64b9a53139445b2ca640d828c26bf23e1c55f8c079b3"
+    },
     "@std/path@1.0.9": {
       "integrity": "260a49f11edd3db93dd38350bf9cd1b4d1366afa98e81b86167b4e3dd750129e"
     },
@@ -49,6 +71,9 @@
       "dependencies": [
         "jsr:@std/bytes"
       ]
+    },
+    "@std/text@1.0.14": {
+      "integrity": "1a810108482414d19112b8b506ad0b7cba826000cd13f74274ffda6dd83d273f"
     }
   },
   "npm": {

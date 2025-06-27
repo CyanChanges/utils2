@@ -125,10 +125,11 @@ export const AlbumDetailResponse: OkTemplateInferT<typeof AlbumDetail.infer> =
 /**
  * Okay Response for /songs
  */
-export const SongsResponse: OkTemplateInferT<typeof Songs.infer> = type(
-  OkResponseTemplate(Songs),
-)
-  .describe("okay response");
+export const SongsResponse: OkTemplateInferT<{ list: typeof Songs.infer }> =
+  type(
+    OkResponseTemplate({ list: Songs }),
+  )
+    .describe("okay response");
 /**
  * Okay Response for /song/:cid
  */

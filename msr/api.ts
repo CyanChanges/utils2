@@ -81,14 +81,14 @@ class SongDetailCollapse extends Collapse<Song> {
   }
 
   /**
-   * Artistes of the album
+   * Artistes of the song
    */
   get artists(): string[] {
     return this._data.artists;
   }
 
   /**
-   * Collapse to `Album`
+   * Collapse to `Song`
    */
   detail(): Promise<Song> {
     throw new Collapse.Transform((x) => x as Song);

@@ -116,6 +116,6 @@ export async function songs(): Promise<typeof meta.Songs.infer> {
     },
   });
   assertStatus(resp);
-  const { data } = SongsResponse.assert(await resp.json());
-  return data;
+  const { data: { list } } = SongsResponse.assert(await resp.json());
+  return list;
 }
